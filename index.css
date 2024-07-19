@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lampu {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
