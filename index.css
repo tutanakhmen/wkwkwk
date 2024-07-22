@@ -1,8 +1,60 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.navbar {
+    background-color: #F8EDED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    color: #173B45;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.li-navbar:hover {
+    background-color: #FF8225;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.a-navbar {
+    text-decoration: none;
+    color: #173B45;
+}
+
 .container {
+    margin-top: 5%;
+    margin-left: 25%;
+    border: 10px solid #173B45;
+    border-radius: 20px;
+    width: 720px;
+    height: 360px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .card {
@@ -14,21 +66,23 @@
     padding: 10px;
 }
 
+.img {}
+
 /* toggle */
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
-  
-  .switch input { 
+}
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -38,9 +92,9 @@
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -50,27 +104,27 @@
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
+}
