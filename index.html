@@ -3,45 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <link rel="stylesheet" href="index.css" />
-    <title>cetrekan lampu</title>
+    <title>testing</title>
   </head>
   <body>
-    <!-- script HTML -->
     <div class="container">
-      <div class="lampu">
+      <div class="card">
         <img src="asset/images/off.gif" alt="" id="lampu1" />
-
-        <label class="inline-flex items-center cursor-pointer">
-          <input type="checkbox" class="sr-only peer" id="toggle-default" onchange="saklar()"/>
-          <div
-            class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
-          ></div>
-          <span
-            class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300"
-            ></span
-          >
+        <!-- toggle -->
+        <label class="switch">
+          <input id="toggle1" type="checkbox" onchange="nyala()" />
+          <span class="slider round"></span>
         </label>
-
-        <button class="button" onclick="saklar('on')">Nyalakan Lampu</button>
-        <button class="button" onclick="saklar('off')">Matikan Lampu</button>
       </div>
 
-      <div class="lampu">
+      <div class="card">
         <img src="asset/images/off.gif" alt="" id="lampu2" />
-        <button class="button" onclick="saklar('on')">Nyalakan Lampu</button>
-        <button class="button" onclick="saklar('off')">Matikan Lampu</button>
-      </div>
-
-      <div class="lampu">
+        <!-- toggle -->
+        <label class="switch">
+          <input id="toggle2" type="checkbox" onchange="nyala()" />
+          <span class="slider round"></span>
+        </label>
+       </div>
+      <div class="card">
         <img src="asset/images/off.gif" alt="" id="lampu3" />
-        <button class="button" onclick="saklar('on')">Nyalakan Lampu</button>
-        <button class="button" onclick="saklar('off')">Matikan Lampu</button>
+        <label class="switch">
+          <input id="toggle3" type="checkbox" onchange="nyala()" />
+          <span class="slider round"></span>
+        </label>
       </div>
     </div>
 
-    <!-- script -->
     <script src="whos.js"></script>
   </body>
 </html>
