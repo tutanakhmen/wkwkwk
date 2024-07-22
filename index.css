@@ -128,3 +128,11 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+/* toggle css */
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
