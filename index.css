@@ -1,0 +1,16 @@
+#root {
+    background-color: aqua;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.content {
+    display: none;
+    text-align: center;
+    color: white;
+}
+
+.logout {
+    display: none;
+}
